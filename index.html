@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bautista Hauret | Portfolio</title>
+  <link rel="stylesheet" href="estilo-portfolio.css">
+  <link rel="icon" href="imagenes/logo_icon/favicon.ico" type="image/png">
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Bautista Hauret</h1>
+      <p>Desarrollador Fullstack... en proceso</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">Sobre Mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>Sobre Mí</h2>
+    <div class="about-content">
+      <img src="imagenes/foto carnet.png" alt="Foto de Bautista Hauret" class="profile-img">
+      <div>
+        <p>Hola! Soy Bautista Hauret, estudiante de programación en la UTN de Pacheco e intento de desarrollador en constante aprendizaje. Me gusta crear soluciones digitales, en especial en el área de Frontend, pero me adapto a todo.</p>
+        <p>También me interesa mucho el hardware, lo que me da una visión más completa de cómo se conectan el software y los dispositivos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Mis Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Juego de dados en C++</h3>
+        <p>Proyecto de Programación 1, con fundamentos de programación estructurada.</p>
+      </div>
+      <div class="project-card">
+        <h3>Sistema de gestión: Taller Mecánico</h3>
+        <p>Aplicación de consola en C++ con POO y manejo de archivos.</p>
+      </div>
+      <div class="project-card">
+        <h3>Sistema de gestión de artículos</h3>
+        <p>Aplicación en C# con conexión a base de datos y WinForms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <ul class="skill-list">
+          <li><img src="imagenes/habilidades_logos/html5 logo.svg" alt="HTML5" class="skill-icon"> HTML5</li>
+          <li><img src="imagenes/habilidades_logos/css logo.svg" alt="CSS3" class="skill-icon"> CSS3</li>
+          <li><img src="imagenes/habilidades_logos/js logo.svg" alt="JavaScript" class="skill-icon"> JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <ul class="skill-list">
+          <li><img src="imagenes/habilidades_logos/c++logo.svg" alt="C++" class="skill-icon"> C++</li>
+          <li><img src="imagenes/habilidades_logos/c_sharp_logo.svg" alt="C#" class="skill-icon"> C#</li>
+          <li><img src="imagenes/habilidades_logos/sql_managment_studio_logo.svg" alt="SQL Server" class="skill-icon"> SQL Server Managment Studio</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Herramientas</h3>
+        <ul class="skill-list">
+          <li><img src="imagenes/habilidades_logos/git_logo.svg" alt="Git" class="skill-icon"> Git</li>
+          <li><img src="imagenes/habilidades_logos/visual_studio_code_logo.svg" alt="VS Code" class="skill-icon"> VS Code</li>
+          <li><img src="imagenes/habilidades_logos/visual_studio2022_logo.svg" alt="Visual Studio 2022" class="skill-icon"> Visual Studio 2022</li>
+          <li><img src="imagenes/habilidades_logos/code_blocks_logo.svg" alt="Code::Blocks" class="skill-icon"> Code::Blocks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contáctame</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/bautista-hauret" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/logo_redes/linkedin logo.svg" alt="LinkedIn" class="social-icon">
+      </a>
+      <a href="https://github.com/bautihauretdev" target="_blank" rel="noopener noreferrer">
+        <img src="imagenes/logo_redes/foto github.svg" alt="GitHub" class="social-icon">
+      </a>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
