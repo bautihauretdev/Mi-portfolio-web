@@ -96,7 +96,8 @@ section h2 {
 }
 
 .project-card {
-  background: #f8f9fa;
+  background: #f0f2f4;
+;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,.1);
@@ -132,7 +133,7 @@ section h2 {
 .skill-list { list-style: none; }
 
 .skill-list li {
-  background: #f8f9fa;
+  background: #f0f2f4;
   padding: .5rem 1rem;
   margin-bottom: .5rem;
   border-radius: 4px;
