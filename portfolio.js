@@ -9,10 +9,28 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
-// Formulario de contacto
+// Formulario de contacto con Formspree
 const form = document.querySelector('.contact-form');
-form.addEventListener('submit', e => {
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-  form.reset();
+
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch("https://formspree.io/f/mwprevoj", {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
+    });
+
+    if (response.ok) {
+      alert("✅ ¡Gracias! Tu mensaje fue enviado correctamente.");
+      form.reset();
+    } else {
+      alert("❌ Ocurrió un error al enviar el mensaje. Intenta de nuevo.");
+    }
+  } catch (err) {
+    alert("⚠️ No se pudo conectar con el servidor. Intenta más tarde.");
+  }
 });
